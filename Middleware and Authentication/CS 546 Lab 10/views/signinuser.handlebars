@@ -1,0 +1,18 @@
+{{!--
+
+login form handlebar template
+
+--}}
+<form id="signin-form" method="POST" action="/signinuser">
+    <label for="userId">User Id</label>
+    <input name="userId" id="userId" type="text" value="{{formData.userId}}">
+    <label for="password">Password</label>
+    <input name="password" id="password" type="password">
+    <button name="submit_button" id="submit_button" type="submit">Sign In</button>
+
+    <a href="/signupuser">Click here to signup!</a>
+    
+    {{#if errors.userId}}<p class="error">{{errors.userId}}</p>{{/if}}
+    {{#if errors.password}}<p class="error">{{errors.password}}</p>{{/if}}
+    {{#if errors.error}}<p class="error">{{errors.error}}</p>{{/if}}
+</form>

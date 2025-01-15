@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Authentication App</title>
+    <link rel="stylesheet" href="/public/css/sitestyles.css">
+</head>
+<body style="background-color: {{#if user.themePreference}}{{user.themePreference.backgroundColor}}{{else}}#ffffff{{/if}}; color: {{#if user.themePreference}}{{user.themePreference.fontColor}}{{else}}#000000{{/if}}">
+    {{{body}}}
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="/public/js/form_validate.js"></script>
+</body>
+</html>

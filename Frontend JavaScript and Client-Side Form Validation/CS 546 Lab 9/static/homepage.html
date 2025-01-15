@@ -1,0 +1,48 @@
+<!-- 
+Your page should have a few basic user interface elements:
+
+A header tag, with an h1 naming your site, with a title for your page
+A footer with your name, student ID, and any other info about yourself you wish to include
+A single ordered list with an id of fibonacciResults.  All of the results for each index the user inputted and that has been calculated so far (until you refresh the page) will appear in this list as list items. Numbers that are prime will be colored in green (see precise hex code below), while numbers that are not will be colored in red (see precise hex code below).
+
+
+Your page will have a form with the following:
+
+A label with a for attribute referencing your input
+A input with and type of number and a name and id attribute of fibonacci_index_input (both the name and the id attribute of this element should be this value)
+A button to submit the form
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fibonacci & Prime Number Checker</title>
+    <link rel="stylesheet" href="/public/css/main.css">
+</head>
+<body>
+    <header>
+        <h1>Fibonacci & Prime Number Checker</h1>
+    </header>
+
+    <main>
+        <form id="fibonacci_form">
+            <p id="error"></p>
+            <label for="fibonacci_index_input">Fibonacci Index:</label>
+            <input type="number" name="fibonacci_index_input" id="fibonacci_index_input" required>
+            <button type="submit">Check</button>
+        </form>
+
+        <ol id="fibonacciResults"></ol>
+    </main>
+
+    <footer>
+        <p>Jason McCauley</p>
+        <p>Student ID: 20006660</p>
+        <p>Undergraduate Student at Stevens Institute of Technology</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="/public/js/main.js"></script>
+</body>
+</html>

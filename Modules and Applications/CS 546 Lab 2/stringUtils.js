@@ -28,8 +28,8 @@ export let replaceCharsAtIndexes = (str, idxArr) => {
       }
 
       // logic
-      let toggle = false
       for(let idx of idxArr){
+            let toggle = false
             let first = true;
             let base_string = str.slice(0, idx);
             let curr = str[idx]

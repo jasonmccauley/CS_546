@@ -1,0 +1,114 @@
+/*
+You will style your page using at least 10 CSS selectors for general CSS styling. You will place the CSS in its own file. 
+*/
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    font-size: 14pt;
+}
+
+body {
+    background: #0e9297;
+    font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+}
+
+main {
+    max-width: 75%;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+header {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2rem;
+    text-align: center;
+    color: #222;
+    margin-bottom: 5px;
+}
+
+p {
+    font-size: 1rem;
+    line-height: 2;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+input[type="number"] {
+    display: block;
+    min-height: 2em;
+    margin: 10px 0;
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #228b22;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #1a691a;
+}
+
+ol#fibonacciResults {
+    padding-left: 20px;
+}
+
+.is-prime {
+    color: #00ff00;
+}
+
+.not-prime {
+    color: #ff0000;
+}
+
+footer {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 0.9rem;
+    color: #333;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+ol#fibonacciResults li {
+    margin-bottom: 10px;
+}
+
+p#error {
+    color: red;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 4px;
+    background-color: #ffebee;
+    border: 1px solid #ffcdd2;
+    display: none;
+}

@@ -1,0 +1,42 @@
+{{!--
+
+registration handelbars
+
+--}}
+<form method="POST" action="/signupuser" name="signup-form" id="signup-form">
+    <label for="firstName">First Name</label>
+    <input name="firstName" id="firstName" type="text" value="{{formData.firstName}}">
+    <label for="lastName">Last Name</label>
+    <input name="lastName" id="lastName" type="text" value="{{formData.lastName}}">
+    <label for="userId">User ID</label>
+    <input name="userId" id="userId" type="text" value="{{formData.userId}}">
+    <label for="password">Password</label>
+    <input name="password" id="password" type="password">
+    <label for="confirmPassword">Confirm Password</label>
+    <input name="confirmPassword" id="confirmPassword" type="password">
+    <label for="favoriteQuote">Favorite Quote</label>
+    <input name="favoriteQuote" id="favoriteQuote" type="text" value="{{formData.favoriteQuote}}">
+    <label for="backgroundColor">Background Color</label>
+    <input name="backgroundColor" id="backgroundColor" type="color" value="{{formData.backgroundColor}}">
+    <label for="fontColor">Font Color</label>
+    <input name="fontColor" id="fontColor" type="color" value="{{formData.fontColor}}">
+    <label for="role">Role</label>
+    <select name="role" id="role">
+        <option value="admin">Admin</option>
+        <option value="user">User</option>
+    </select>
+    <button name="submitButton" id="submitButton" type="submit">Sign Up</button>
+
+    {{#if errors.firstName}}<p class="error">{{errors.firstName}}</p>{{/if}}
+    {{#if errors.lastName}}<p class="error">{{errors.lastName}}</p>{{/if}}
+    {{#if errors.userId}}<p class="error">{{errors.userId}}</p>{{/if}}
+    {{#if errors.password}}<p class="error">{{errors.password}}</p>{{/if}}
+    {{#if errors.confirmPassword}}<p class="error">{{errors.confirmPassword}}</p>{{/if}}
+    {{#if errors.favoriteQuote}}<p class="error">{{errors.favoriteQuote}}</p>{{/if}}
+    {{#if errors.backgroundColor}}<p class="error">{{errors.backgroundColor}}</p>{{/if}}
+    {{#if errors.fontColor}}<p class="error">{{errors.fontColor}}</p>{{/if}}
+    {{#if errors.role}}<p class="error">{{errors.role}}</p>{{/if}}
+    {{#if errors.error}}<p class="error">{{errors.error}}</p>{{/if}}
+
+    <a href="/signinuser">Already have an account? Click here to sign-in</a>
+</form>
